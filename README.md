@@ -26,7 +26,15 @@ First off all you need to install [Resource Override](https://chromewebstore.goo
 
 Open `web telegram` and `DevTools`. Then start the blum. In `Network` tab you will find your Bearer token. Copy the token with the word `Bearer`.
 
-![how to get Bearer token](./src/assets/token2.jpg)
+![how to get Bearer token](./src/assets/token.jpg)
+
+# Final step
+
+After mining make sure that you turned off the [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) extension.
+
+<h1 style="color: red;">If you don’t turn it off, you’ll have problems with sites like YouTube!</h1>
+
+![extension](./src/assets/resource.jpg)
 
 # Happy mining!
 
@@ -60,6 +68,14 @@ Open `web telegram` and `DevTools`. Then start the blum. In `Network` tab you wi
 
 Откройте `веб-телеграм` и `DevTools`. Затем запустите Блум. На вкладке `Network` вы найдете свой токен. Скопируйте токен со словом `Bearer`.
 
-![how to get Bearer token](./src/assets/token2.jpg)
+![how to get Bearer token](./src/assets/token.jpg)
+
+# Финальный шаг
+
+После майнинга убедитесь, что вы выключили [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) расширение.
+
+<h1 style="color: red;">Если вы не выключили расширение, вы получите проблемы с сайтами, такими как YouTube!</h1>
+
+![extension](./src/assets/resource.jpg)
 
 # Приятного майнинга!
