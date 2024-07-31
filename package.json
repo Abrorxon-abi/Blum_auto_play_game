@@ -1,0 +1,31 @@
+{
+  "name": "blum-auto-play",
+  "version": "1.0.0",
+  "description": "A script that will play mini game in Blum for you, using your tickets and collecting blum points",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abrorxon-abi/Blum_auto_play_game.git"
+  },
+  "keywords": [
+    "mining",
+    "blum points",
+    "blum",
+    "telegram bot",
+    "auto play"
+  ],
+  "author": "Abrorxon Abrorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abrorxon-abi/Blum_auto_play_game/issues"
+  },
+  "homepage": "https://github.com/Abrorxon-abi/Blum_auto_play_game#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "https-proxy-agent": "^7.0.5"
+  }
+}
