@@ -22,7 +22,7 @@ A script that will play mini game in Blum for you, using your tickets and collec
 
 # Note:
 
-First off all you need to `Allow Outside Content, Allow Frames and Enable CORS` from your browser using Chrome extension: [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu).
+First off all you need to install [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) Chrome extension. Than click `Add Rule` button and select `Change Headers`. In the `For` input field type `*` for convenience. After that click `Edit Headers` and select `Enable CORS, Allow Frames and Allow Outside Content` in Presets dropdown then click `Close`.
 
 # Happy mining!
 
@@ -52,6 +52,6 @@ First off all you need to `Allow Outside Content, Allow Frames and Enable CORS` 
 
 # Примечание:
 
-Прежде всего вам нужно «Разрешить внешний контент, разрешить фреймы и включить CORS» в вашем браузере, используя расширение Chrome: [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu).
+Прежде всего вам нужно установить расширение Chrome [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu). Затем нажмите кнопку `Add Rule` и выберите `Change Headers`. В поле `For` введите `*` для удобства. Далее нажмите `Edit Headers` и выберите `Enable CORS, Allow Frames and Allow Outside Content` в списке предустановленных параметров. Затем нажмите `Close`.
 
 # Приятного майнинга!
