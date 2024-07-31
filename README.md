@@ -25,7 +25,8 @@ A script that will play mini game in Blum for you, using your tickets and collec
 First off all you need to install [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) Chrome extension. Than click `Add Rule` button and select `Change Headers`. In the `For` input field type `*` for convenience. After that click `Edit Headers` and select `Enable CORS, Allow Frames and Allow Outside Content` in Presets dropdown then click `Close`.
 
 Open `web telegram` and `DevTools`. Then start the blum. In `Network` tab you will find your Bearer token.
-![how to get Bearer token](./src/assets/token.jpg)
+
+![how to get Bearer token](./src/assets/token2.jpg)
 
 # Happy mining!
 
@@ -58,6 +59,7 @@ Open `web telegram` and `DevTools`. Then start the blum. In `Network` tab you wi
 Прежде всего вам нужно установить расширение Chrome [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu). Затем нажмите кнопку `Add Rule` и выберите `Change Headers`. В поле `For` введите `*` для удобства. Далее нажмите `Edit Headers` и выберите `Enable CORS, Allow Frames and Allow Outside Content` в списке предустановленных параметров. Затем нажмите `Close`.
 
 Откройте `веб-телеграм` и `DevTools`. Затем запустите Блум. На вкладке `Network` вы найдете свой токен.
-![how to get Bearer token](./src/assets/token.jpg)
+
+![how to get Bearer token](./src/assets/token2.jpg)
 
 # Приятного майнинга!
