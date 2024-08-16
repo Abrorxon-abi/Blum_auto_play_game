@@ -4,24 +4,13 @@ A script that will play mini game in Blum for you, using your tickets and collec
 
 ## Installation
 
-1. **Install Node.js and npm** (if you haven't already):
-
-   - [Download Node.js](https://nodejs.org/)
-
-2. **Create a new folder and enter it:**
-
-```bash
-mkdir blum-auto-play
-cd blum-auto-play
-```
-
-3. **Install the `blum-auto-play` package:**
+1. **Install the `blum-auto-play` package:**
 
 ```bash
 npm install blum-auto-play
 ```
 
-4. **Configure `package.json`:**
+2. **Configure `package.json`:**
 
    - Open `package.json`
    - Add `"type": "module"` to the JSON structure:
@@ -32,7 +21,7 @@ npm install blum-auto-play
 }
 ```
 
-5. **Create a `index.js` file and paste the code:**
+3. **Create a `index.js` file and paste the code:**
 
 ```javascript
 import { play } from "blum-auto-play";
@@ -40,7 +29,7 @@ const authToken = "Bearer <your_token>";
 play(authToken);
 ```
 
-6. **Add your Bearer token:**
+4. **Add your Bearer token:**
 
    - Copy your Blum `Bearer token` and paste it in the `index.js` file.
 
@@ -95,18 +84,11 @@ Once you have received the Bearer token, be sure to disable the Resource Overrid
 
 ## Установка
 
-1. **Установите Node.js и npm** (если еще не установлены):
-   - [Скачать Node.js](https://nodejs.org/)
-2. **Создайте новую папку и перейдите в неё:**
-   ```bash
-   mkdir blum-auto-play
-   cd blum-auto-play
-   ```
-3. **Установите пакет `blum-auto-play`:**
+1. **Установите пакет `blum-auto-play`:**
    ```bash
    npm install blum-auto-play
    ```
-4. **Настройте `package.json`:**
+2. **Настройте `package.json`:**
 
    - Откройте файл `package.json`.
    - Добавьте `"type": "module"` в JSON-структуру:
@@ -117,7 +99,7 @@ Once you have received the Bearer token, be sure to disable the Resource Overrid
    }
    ```
 
-5. **Создайте файл `index.js` и добавьте следующий код:**
+3. **Создайте файл `index.js` и добавьте следующий код:**
 
    ```javascript
    import { play } from "blum-auto-play";
@@ -125,7 +107,7 @@ Once you have received the Bearer token, be sure to disable the Resource Overrid
    play(authToken);
    ```
 
-6. **Добавьте ваш Bearer токен:**
+4. **Добавьте ваш Bearer токен:**
    - Вставьте ваш Bearer токен вместо `<Bearer token>` в файле index.js.
 
 ## Получение Bearer токена
