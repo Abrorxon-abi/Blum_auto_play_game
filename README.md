@@ -2,15 +2,74 @@
 
 A script that will play mini game in Blum for you, using your tickets and collecting blum points
 
-# Usage
+## Installation
 
-1. Install Node.js and npm if you haven't already
-2. Clone the repository and go to the folder
-3. Copy your Blum `Bearer token` and paste it in the `src/helpers/api.js` file at `const authToken = "<your_token>";`
-4. Install the dependencies by running `npm install`
-5. Run the script by running `npm start`
+1. **Install Node.js and npm** (if you haven't already):
 
-# Functionality
+   - [Download Node.js](https://nodejs.org/)
+
+2. **Create a new folder and enter it:**
+
+```bash
+mkdir blum-auto-play
+cd blum-auto-play
+```
+
+3. **Install the `blum-auto-play` package:**
+
+```bash
+npm install blum-auto-play
+```
+
+4. **Configure `package.json`:**
+
+   - Open `package.json`
+   - Add `"type": "module"` to the JSON structure:
+
+```json
+{
+  "type": "module"
+}
+```
+
+5. **Create a `index.js` file and paste the code:**
+
+```javascript
+import { play } from "blum-auto-play";
+const authToken = "Bearer <your_token>";
+play(authToken);
+```
+
+6. **Add your Bearer token:**
+
+   - Copy your Blum `Bearer token` and paste it in the `index.js` file.
+
+## Receiving a Bearer token
+
+1. **Install the [`Resource Override`](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) extension for Chrome**
+
+2. **Set up Resource Override:**
+   - Click the `Add Rule` button and select `Change Headers`.
+   - In the `For` field, enter `*` (for convenience).
+   - Click `Edit Headers` and select from the presets: `Enable CORS`, `Allow Frames` and `Allow Outside Content`.
+   - Close the settings window.
+3. **Get your Bearer token:**
+
+   - Go to the web version of Telegram and open DevTools (usually F12 or Ctrl+Shift+I).
+   - Launch Blum and go to the `Network` tab in DevTools.
+   - Find your Bearer token in the request headers.
+
+4. **Copy your Bearer token and paste it into the index.js file.**
+
+![how to get Bearer token](./src/assets/token.jpg)
+
+## Run the script:
+
+```bash
+   node index.js
+```
+
+## Functionality
 
 - Starts a new game
 - Collects a random number of points between 170 and 195
@@ -20,19 +79,9 @@ A script that will play mini game in Blum for you, using your tickets and collec
 - If the token is invalid, logs an error and exits
 - If the number of tickets is 0, logs an error and exits
 
-# Note:
+## Note:
 
-First off all you need to install [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) Chrome extension. Than click `Add Rule` button and select `Change Headers`. In the `For` input field type `*` for convenience. After that click `Edit Headers` and select `Enable CORS, Allow Frames and Allow Outside Content` in Presets dropdown then click `Close`.
-
-Open `web telegram` and `DevTools`. Then start the blum. In `Network` tab you will find your Bearer token. Copy the token with the word `Bearer`.
-
-![how to get Bearer token](./src/assets/token.jpg)
-
-# Final step
-
-After mining make sure that you turned off the [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) extension.
-
-<h1 style="color: red;">If you don’t turn it off, you’ll have problems with sites like YouTube!</h1>
+Once you have received the Bearer token, be sure to disable the Resource Override extension to avoid problems with other sites.
 
 ![extension](./src/assets/resource.jpg)
 
@@ -44,37 +93,77 @@ After mining make sure that you turned off the [Resource Override](https://chrom
 
 Скрипт, который будет играть за вас в мини-игру в Blum, используя ваши билеты и собирая очки Blum.
 
-# Использование
+## Установка
 
-1. Установите Node.js и npm, если вы ещё не установили
-2. Клонируйте репозиторий и переходите в папку
-3. Копируйте ваш Blum `Bearer token` и вставляйте его в файл `src/helpers/api.js` в поле `const authToken = "<your_token>";`
-4. Установите зависимости, запустив `npm install`
-5. Запустите скрипт, запуская `npm start`
+1. **Установите Node.js и npm** (если еще не установлены):
+   - [Скачать Node.js](https://nodejs.org/)
+2. **Создайте новую папку и перейдите в неё:**
+   ```bash
+   mkdir blum-auto-play
+   cd blum-auto-play
+   ```
+3. **Установите пакет `blum-auto-play`:**
+   ```bash
+   npm install blum-auto-play
+   ```
+4. **Настройте `package.json`:**
 
-# Функциональность
+   - Откройте файл `package.json`.
+   - Добавьте `"type": "module"` в JSON-структуру:
 
-- Начинает новый игровой процесс
-- Собирает случайное количество баллов между 170 и 195
-- Ожидает случайное количество времени между 30 и 35 секунд
-- Объявляет баллы
-- Если возникнет ошибка, ожидает 5 секунд и повторяет
-- Если токен недействителен, логирует ошибку и выходит
-- Если количество билетов 0, логирует ошибку и выходит
+   ```json
+   {
+     "type": "module"
+   }
+   ```
 
-# Примечание:
+5. **Создайте файл `index.js` и добавьте следующий код:**
 
-Прежде всего вам нужно установить расширение Chrome [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu). Затем нажмите кнопку `Add Rule` и выберите `Change Headers`. В поле `For` введите `*` для удобства. Далее нажмите `Edit Headers` и выберите `Enable CORS, Allow Frames and Allow Outside Content` в списке предустановленных параметров. Затем нажмите `Close`.
+   ```javascript
+   import { play } from "blum-auto-play";
+   const authToken = "Bearer <ваш_токен>";
+   play(authToken);
+   ```
 
-Откройте `веб-телеграм` и `DevTools`. Затем запустите Блум. На вкладке `Network` вы найдете свой токен. Скопируйте токен со словом `Bearer`.
+6. **Добавьте ваш Bearer токен:**
+   - Вставьте ваш Bearer токен вместо `<Bearer token>` в файле index.js.
+
+## Получение Bearer токена
+
+1. **Установите расширение [`Resource Override`](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) для Chrome**
+
+2. **Настройте Resource Override:**
+   - Нажмите кнопку `Add Rule` и выберите `Change Headers`.
+   - В поле `For` введите `*` (для удобства).
+   - Нажмите `Edit Headers` и выберите в предустановках: `Enable CORS`, `Allow Frames` и `Allow Outside Content`.
+   - Закройте окно настройки.
+3. **Откройте Web Telegram и DevTools:**
+   - Перейдите на веб-версию Telegram и откройте DevTools (обычно F12 или Ctrl+Shift+I).
+   - Запустите Blum и перейдите на вкладку `Network` в DevTools.
+   - Найдите ваш Bearer токен в заголовках запросов.
+4. **Копируйте ваш Bearer токен и вставьте его в файл index.js.**
 
 ![how to get Bearer token](./src/assets/token.jpg)
 
-# Финальный шаг
+## Запустите скрипт:
 
-После майнинга убедитесь, что вы выключили [Resource Override](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) расширение.
+```bash
+   node index.js
+```
 
-<h1 style="color: red;">Если вы не выключили расширение, вы получите проблемы с сайтами, такими как YouTube!</h1>
+## Функциональность
+
+- Запускает новую игру.
+- Собирает случайное количество очков от 170 до 195.
+- Ждет случайное время от 30 до 35 секунд.
+- Забирает очки.
+- В случае ошибки ждет 5 секунд и пробует снова.
+- Если токен недействителен, скрипт выводит ошибку и завершает работу.
+- Если билетов 0, скрипт выводит ошибку и завершает работу.
+
+## Важно:
+
+После того как вы получили Bearer токен, обязательно отключите расширение Resource Override, чтобы избежать проблем с другими сайтами.
 
 ![extension](./src/assets/resource.jpg)
 

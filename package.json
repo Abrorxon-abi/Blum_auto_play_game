@@ -1,6 +1,6 @@
 {
   "name": "blum-auto-play",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A script that will play mini game in Blum for you, using your tickets and collecting blum points",
   "main": "./src/index.js",
   "type": "module",
