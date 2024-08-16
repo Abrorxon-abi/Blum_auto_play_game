@@ -1,8 +1,7 @@
 import { getBalance, claimPoints, startGame } from "./blum.js";
 import { generateRandomNumber, sleep } from "./utils.js";
-import { authToken } from "./helpers/api.js";
 
-(async () => {
+export async function play(authToken) {
   const minReward = 170;
   const maxReward = 195;
 
@@ -45,4 +44,4 @@ import { authToken } from "./helpers/api.js";
     console.log(e);
     console.log("Update token");
   }
-})();
+}
