@@ -4,13 +4,15 @@ A script that will play mini game in Blum for you, using your tickets and collec
 
 ## Installation
 
-1. **Install the `blum-auto-play` package:**
+1. **Create new folder and navigate to it**
+
+2. **Install the `blum-auto-play` package:**
 
 ```bash
 npm install blum-auto-play
 ```
 
-2. **Configure `package.json`:**
+3. **Configure `package.json`:**
 
    - Open `package.json`
    - Add `"type": "module"` to the JSON structure:
@@ -21,7 +23,7 @@ npm install blum-auto-play
 }
 ```
 
-3. **Create a `index.js` file and paste the code:**
+4. **Create a `index.js` file and paste the code:**
 
 ```javascript
 import { play } from "blum-auto-play";
@@ -29,7 +31,7 @@ const authToken = "Bearer <your_token>";
 play(authToken);
 ```
 
-4. **Add your Bearer token:**
+5. **Add your Bearer token:**
 
    - Copy your Blum `Bearer token` and paste it in the `index.js` file.
 
@@ -84,11 +86,13 @@ Once you have received the Bearer token, be sure to disable the Resource Overrid
 
 ## Установка
 
-1. **Установите пакет `blum-auto-play`:**
+1. **Создайте новую папку и переходите в него**
+
+2. **Установите пакет `blum-auto-play`:**
    ```bash
    npm install blum-auto-play
    ```
-2. **Настройте `package.json`:**
+3. **Настройте `package.json`:**
 
    - Откройте файл `package.json`.
    - Добавьте `"type": "module"` в JSON-структуру:
@@ -99,7 +103,7 @@ Once you have received the Bearer token, be sure to disable the Resource Overrid
    }
    ```
 
-3. **Создайте файл `index.js` и добавьте следующий код:**
+4. **Создайте файл `index.js` и добавьте следующий код:**
 
    ```javascript
    import { play } from "blum-auto-play";
@@ -107,7 +111,7 @@ Once you have received the Bearer token, be sure to disable the Resource Overrid
    play(authToken);
    ```
 
-4. **Добавьте ваш Bearer токен:**
+5. **Добавьте ваш Bearer токен:**
    - Вставьте ваш Bearer токен вместо `<Bearer token>` в файле index.js.
 
 ## Получение Bearer токена
